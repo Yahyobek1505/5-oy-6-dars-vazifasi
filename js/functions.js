@@ -56,4 +56,12 @@ function validation(data) {
   return true;
 }
 
-export {validation}
+function getData() {
+  let data = [];
+  if (localStorage.getItem('cars')) {
+    data = JSON.parse(localStorage.getItem('cars'));
+  }
+  return data;
+}
+
+export {validation, getData}
