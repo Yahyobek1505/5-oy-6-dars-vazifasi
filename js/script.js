@@ -23,7 +23,7 @@ function newCard(car) {
           <div class="col-9">
             <div class="title d-flex justify-content-between">
               <h1>${car.name}</h1>
-              <button class="btn btn-primary">Batafsil</button>
+              <button about_id = 'more_${car.id}' class="btn btn-primary more">Batafsil</button>
             </div>
             <div class="intro">
               <div class="row">
@@ -46,8 +46,6 @@ function newCard(car) {
         </div>
   `
 }
-
-
 
 button  && button.addEventListener('click', function (event) {
   event.preventDefault();
@@ -82,4 +80,14 @@ document.addEventListener("DOMContentLoaded", function () {
       let card = newCard(car);
       mainScren.innerHTML += card;
     });
-})
+
+    let infoButons = document.querySelectorAll('button.more') 
+     infoButons.length && infoButons.forEach(more => {
+      more && more.addEventListener('click', function () {
+        let id = this.getAttribute('about_id').substring(5);
+        
+      let urlManzil = window.location.href.substring(0, window.location.href.search('index'));
+      window.location.assign(`${urlManzil}about/about.html?id=${id}`)
+      })
+     }) 
+  })
