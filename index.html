@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="container p-4">
+      <div class="form-section bg-secondary mt-2 p-4">
+        <h1 class="text-center">Main page</h1>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="name" class="form-label">Mashina nomi</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter name" />
+          </div>
+          <div class="col-md-6">
+            <label for="category" class="form-label">Mashina turi</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose category</option>
+              <option value="Mersades">Mersades</option>
+              <option value="Daewoo">Daewoo</option>
+              <option value="Chevrolet">Chevrolet</option>
+              <option value="Toyota">Toyota</option>
+              <option value="Hyundai">Hyundai</option>
+            </select>
+          </div>
+          <div class="col-6">
+            <label for="narx" class="form-label">Narxini kiriting</label>
+            <input
+              type="text"
+              class="form-control"
+              id="narx"
+              placeholder="narxini kiriting" />
+          </div>
+          <div class="col-6">
+            <label for="rasm" class="form-label"
+              >Mashina suratini url manzilini yuboring</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="rasm"
+              placeholder="https://...." />
+          </div>
+          <div class="col-md-6">
+            <label for="sana" class="form-label">Ishlab chiqarilgan sana</label>
+            <input type="month" class="form-control" id="sana" placeholder="" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputCategory" class="form-label"
+              >Mashina rangini tanlang</label
+            >
+            <select id="inputCategory" class="form-select">
+              <option selected>Choose color</option>
+              <option value="Mersades">Black</option>
+              <option value="Daewoo">White</option>
+              <option value="Chevrolet">Bleu</option>
+              <option value="Toyota">Red</option>
+              <option value="Hyundai">Yellow</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label for="textarea">Tasnif</label>
+            <textarea
+              class="form-control"
+              placeholder="Leave a comment here"
+              id="textarea"></textarea>
+          </div>
+          <div class="col-12">
+            <button
+              type="submit"
+              class="btn btn-success col-3 mb-2"
+              id="button">
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="main-data">
+        <div class="border row mt-5 p-4">
+          <div class="col-3">
+            <img
+              width="200"
+              height="150"
+              src="https://picsum.photos/seed/picsum/200/200"
+              alt="" />
+          </div>
+          <div class="col-9">
+            <div class="title d-flex justify-content-between">
+              <h1>Gentra</h1>
+              <button class="btn btn-primary">Batafsil</button>
+            </div>
+            <div class="intro">
+              <div class="row">
+                <div class="col-6">
+                  <h3>Daewoo</h3>
+                  <h4>14000</h4>
+                </div>
+                <div class="col-6">
+                  <h4>2021</h4>
+                  <h4>Qora</h4>
+                </div>
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit magnam optio placeat iure distinctio similique.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-data">
+        <div class="border row mt-5 p-4">
+          <div class="col-3">
+            <img
+              width="200"
+              height="150"
+              src="https://picsum.photos/seed/picsum/200/200"
+              alt="" />
+          </div>
+          <div class="col-9">
+            <div class="title d-flex justify-content-between">
+              <h1>Gentra</h1>
+              <button class="btn btn-primary">Batafsil</button>
+            </div>
+            <div class="intro">
+              <div class="row">
+                <div class="col-6">
+                  <h3>Daewoo</h3>
+                  <h4>14000</h4>
+                </div>
+                <div class="col-6">
+                  <h4>2021</h4>
+                  <h4>Qora</h4>
+                </div>
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit magnam optio placeat iure distinctio similique.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./js/script.js" type="module"></script>
+</html>
