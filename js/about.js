@@ -60,5 +60,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
           }
   }) 
-});
+  
+  update &&  update.addEventListener('click', function () {  
+    console.log("hello");
+  let urlManzil = window.location.href.substring(0,window.location.href.search("about"));
+  window.location.assign(`${urlManzil}about/update.html`);
+  });
+})
 
