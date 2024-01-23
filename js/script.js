@@ -38,7 +38,7 @@ function newCard(car) {
                   </div>
                   
                   <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit magnam optio placeat iure distinctio similique.
+                  ${car.tasnif}
                   </p>
                   <span class="btn btn-success">${car.status}</span>
             </div>
